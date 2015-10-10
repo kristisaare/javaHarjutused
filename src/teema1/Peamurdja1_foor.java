@@ -23,8 +23,35 @@ public class Peamurdja1_foor extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Foor foor = new Foor();
-        foor.vahetaKollast();
-        foor.paus(0.5);
-        foor.vahetaKollast();
+
+        int count = 0; //Jee jee tegime foori.
+        while (count<3) {
+
+            foor.vahetaPunast();
+            foor.paus(2.5);
+            foor.vahetaKollast();
+            foor.paus(1.5);
+            foor.vahetaPunast();
+            foor.vahetaKollast();
+            foor.vahetaRohelist();
+            foor.paus(1.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.vahetaKollast();
+            foor.paus(1.5);
+            foor.vahetaKollast();
+            count = count + 1;
+        }
     }
 }

@@ -18,6 +18,8 @@ public class Naidis_KollaneVilkuja extends Application {
         foor.paus(0.5);
         foor.vahetaKollast();
         foor.paus(0.5);
+        foor.vahetaKollast();
+        foor.paus(0.5);
     }
 
 }

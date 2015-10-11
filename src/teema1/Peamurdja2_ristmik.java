@@ -37,7 +37,7 @@ public class Peamurdja2_ristmik extends Application {
     }
 
     public void rohelisestPunaseks(Foor foor) {
-        foor.vahetaRohelist();
+        foor.vahetaRohelist();   //Both cycles are 5 sec
         foor.paus(2.5);
         foor.vahetaRohelist();
         foor.paus(0.5);
@@ -56,8 +56,8 @@ public class Peamurdja2_ristmik extends Application {
         foor.vahetaPunast();
         foor.paus(0.5);
         foor.vahetaPunast();
-        foor.paus(1);
         foor.vahetaKollast();
+        foor.paus(1);
         foor.vahetaPunast();
         foor.paus(0.5);
         foor.vahetaKollast();

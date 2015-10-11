@@ -1,5 +1,6 @@
 package teema1;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -16,4 +17,35 @@ import java.util.Scanner;
  *    nii vertikaalselt kui ka horisontaalselt?
  */
 public class Peamurdja3_laevad {
+    public static void main(String[] args) {
+
+        int[] board = {randShip(),randShip(),randShip(),randShip(),randShip(),randShip(),randShip(),randShip()};
+        System.out.println(Arrays.toString(board));
+        System.out.println(board.length + " squares.");
+
+        Scanner user = new Scanner(System.in);
+        System.out.println("Please, enter a number between 0 and " + (board.length-1));
+        int entry = user.nextInt();
+
+        System.out.println(board[entry]);
+
+        if (board[entry] == 1) {
+            System.out.println("Hit!");
+        } else {
+            System.out.println("Miss!");
+        }
+
+        if (board[entry] == 1) {
+            board[entry] = 2;       //If ship is hit, mark location with "2" to mark sunken ship.
+        }
+
+        System.out.println(Arrays.toString(board));
+
+
+    }
+
+    public static int randShip(){               // Random value generation 0 or 1 for the board
+        int result = (int) (Math.random()*2);
+        return result;
+    }
 }
